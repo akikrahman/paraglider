@@ -5,14 +5,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>JS Starter</title>
+  <title>The Paraglider</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/axios/dist/axios.min.js"  type="text/javascript"></script>
 </head>
 
-<body>
-<h1>Hello World!</h1>
+<body >
+<h1 id="title">The Paraglider</h1>
+<div class="main">
+  <input type="button" onclick="getImages()">
+  <img class="glider">
+</div>
 
-<script src="script.js"></script>
+<script type="module" src="./script.js"  type="text/javascript">  import getImages from "script.js"; </script>
 </body>
-
 </html>

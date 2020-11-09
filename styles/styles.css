@@ -1,0 +1,39 @@
+body {
+    background-color: #ffffff;
+    font-family: GothamSSm, Helvetica, Arial, sans-serif;
+    color: rgb(22, 19, 19);
+}
+
+p {
+    text-decoration: none;
+    color: #141313;
+}
+
+h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.mainImage {
+    max-height: 900px ;
+    max-width : 1200px ;
+    border-image: auto;
+}
+
+.testClass {
+    text-emphasis: 90%;
+    font-size: large;
+}
+
+.btnImage {
+    height: 30px;
+    width: 30px;
+    fill: brown;
+    margin: 10px;
+}
+
+.showPic {
+    font-size: 1.5rem;
+    text-emphasis: 80%;
+    color: rgb(255, 123, 0);
+}
