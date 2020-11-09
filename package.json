@@ -6,8 +6,7 @@
   "scripts": {
     "start": "lite-server"
   },
-  "author": "Pluralsight",
-  "license": "ISC",
+  "author": "Akik Rahman",
   "devDependencies": {
     "lite-server": "^2.5.4"
   },
