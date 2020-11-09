@@ -4,7 +4,7 @@ async function changeColour(){
   document.getElementById('myText').setAttribute('class', 'testClass');
   console.log('running a function');
 
-  const  {data} = await axios.get(`http://localhost:3000/images`);
+  const  {data} = await axios.get(`http://localhost:3004/images`);
   //const data = JSON.parse('db');
   const it = data[Symbol.iterator]();
   let position = it.next();
