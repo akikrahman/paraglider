@@ -1,7 +1,17 @@
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;    
+}
+
 body {
-    background-color: #ffffff;
-    font-family: GothamSSm, Helvetica, Arial, sans-serif;
-    color: rgb(22, 19, 19);
+    background-color: #68c0e9;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+h1 {
+    font-size: 32px;
+    text-align: center;
+    font-weight: bold;
 }
 
 p {
@@ -9,31 +19,48 @@ p {
     color: #141313;
 }
 
-h1 {
-    font-size: 2rem;
-    text-align: center;
+.header {
+    border-style: solid;
+    border-width: 1px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.mainImage {
-    max-height: 900px ;
-    max-width : 1200px ;
-    border-image: auto;
+.header h1 {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border: black;
+    border-width: 2px;
 }
 
-.testClass {
-    text-emphasis: 90%;
-    font-size: large;
+.intro-text {
+    width: 400px;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.intro-text p {
+    margin: 10px auto 20px auto;
+}
+
+.image-gallery {
+    height: 600px ;
+    width : 900px ;
+    border-style: solid;
+    background-color: darkblue;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 .btnImage {
-    height: 30px;
-    width: 30px;
-    fill: brown;
-    margin: 10px;
-}
-
-.showPic {
-    font-size: 1.5rem;
-    text-emphasis: 80%;
-    color: rgb(255, 123, 0);
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    fill: darkgrey;
+    font-weight: bold;
 }
