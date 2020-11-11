@@ -1,7 +1,7 @@
 
 
-async function changeColour(){
-  document.getElementById('myText').setAttribute('class', 'testClass');
+async function changePics(){
+
   console.log('running a function');
 
   const  {data} = await axios.get(`http://localhost:3004/images`);
