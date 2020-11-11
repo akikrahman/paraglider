@@ -21,6 +21,7 @@ p {
 
 .header {
     border-style: solid;
+    margin-top: 5px;
     border-width: 1px;
     width: 300px;
     margin-left: auto;
@@ -60,6 +61,7 @@ p {
 .btnImage {
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 5px;
     display: block;
     fill: darkgrey;
     font-weight: bold;
