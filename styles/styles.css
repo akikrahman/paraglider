@@ -59,10 +59,13 @@ p {
 }
 
 .btnImage {
-    margin-left: auto;
-    margin-right: auto;
+    align-content: center;
     margin-bottom: 5px;
-    display: block;
-    fill: darkgrey;
+    fill: rgb(169, 169, 169);
     font-weight: bold;
+}
+
+.control-buttons {
+    margin: 5px auto 5px auto;
+    width: 300px;
 }
