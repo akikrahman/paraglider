@@ -56,6 +56,7 @@ p {
     margin-left: auto;
     margin-right: auto;
     display: block;
+    color: white;
 }
 
 .btnImage {
@@ -67,5 +68,17 @@ p {
 
 .control-buttons {
     margin: 5px auto 5px auto;
-    width: 300px;
+    width: 330px;
+}
+
+.footer {
+    margin-top: 10px;
+    bottom: 10px;
+    position: absolute;
+}
+
+.footer p {
+    font-size: 8;
+    text-align: right;
+    color: rgb(29, 25, 28);
 }
