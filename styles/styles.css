@@ -49,14 +49,21 @@ p {
 }
 
 .image-gallery {
-    height: 600px ;
-    width : 900px ;
+    height: 440px ;
+    width : 680px ;
     border-style: solid;
     background-color: darkblue;
     margin-left: auto;
     margin-right: auto;
     display: block;
     color: white;
+}
+
+@media screen and (min-width: 768px) {
+    .image-gallery {
+        height: 600px ;
+        width : 900px ;
+    }
 }
 
 .btnImage {
