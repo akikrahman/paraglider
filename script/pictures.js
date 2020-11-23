@@ -57,17 +57,6 @@ function changePics(){
   , 3000);
 }
 
-function restartPics(){
-  index=0;
-  stopPics();
-  myTimer = setInterval( () => {
-    document.getElementById('glideImg').setAttribute('src', imagefile[index]);
-    index++;
-    if(index === max) index=0;
-  }
-  , 3000);
-}
-
 function stopPics(){
   clearInterval(myTimer);
 }
