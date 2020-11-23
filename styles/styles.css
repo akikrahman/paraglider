@@ -49,8 +49,8 @@ p {
 }
 
 .image-gallery {
-    height: 440px ;
-    width : 680px ;
+    height: 400px ;
+    width : 600px ;
     border-style: solid;
     background-color: darkblue;
     margin-left: auto;
@@ -59,10 +59,19 @@ p {
     color: white;
 }
 
+/* medium screens */
 @media screen and (min-width: 768px) {
     .image-gallery {
-        height: 600px ;
-        width : 900px ;
+        height: 512px ;
+        width : 768px ;
+    }
+}
+
+/* large screens*/
+@media screen and (min-width: 1080px) {
+    .image-gallery {
+        height: 720px ;
+        width : 1080px ;
     }
 }
 
