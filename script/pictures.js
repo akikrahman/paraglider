@@ -1,5 +1,6 @@
 'use strict';
 
+var pictureFunctions = function(){
 
 let imagefile = [];
 let index = 0;
@@ -37,7 +38,7 @@ async function readPicsFile(){
   max= imagefile.length;
 }
 
-function changePics(){
+var changePics = function changePics(){
   
   if(!started){
   //readPicsFile();
@@ -57,6 +58,24 @@ function changePics(){
   , 3000);
 }
 
-function stopPics(){
+var restartPics = function restartPics(){
+  index=0;
+  stopPics();
+  myTimer = setInterval( () => {
+    document.getElementById('glideImg').setAttribute('src', imagefile[index]);
+    index++;
+    if(index === max) index=0;
+  }
+  , 3000);
+}
+
+var stopPics = function stopPics(){
   clearInterval(myTimer);
 }
+
+return {
+  changePics: changePics,
+  restartPics: restartPics,
+  stopPics: stopPics
+}
+}();
