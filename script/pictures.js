@@ -1,5 +1,6 @@
 'use strict';
 
+var pictureFunctions = function(){
 
 let imagefile = [];
 let index = 0;
@@ -37,7 +38,7 @@ async function readPicsFile(){
   max= imagefile.length;
 }
 
-function changePics(){
+var changePics = function changePics(){
   
   if(!started){
   //readPicsFile();
@@ -57,7 +58,7 @@ function changePics(){
   , 3000);
 }
 
-function restartPics(){
+var restartPics = function restartPics(){
   index=0;
   stopPics();
   myTimer = setInterval( () => {
@@ -68,6 +69,13 @@ function restartPics(){
   , 3000);
 }
 
-function stopPics(){
+var stopPics = function stopPics(){
   clearInterval(myTimer);
 }
+
+return {
+  changePics: changePics,
+  restartPics: restartPics,
+  stopPics: stopPics
+}
+}();
