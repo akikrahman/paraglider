@@ -6,13 +6,33 @@
     <title>Paragliding pictures</title>
     <meta name="author" content="Akik Rahman" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="./styles/normalize.css" />
     <link rel="stylesheet" href="./styles/styles.css" />
     <script src="./script/pictures.js"></script>
     <script src="./script/axios.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+    .navbar{
+      background-color: #afccf8;
+    }
+  </style>
   </head>
 
   <body>
+    
+<nav class="navbar navbar-expand-sm">
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="Index.html">Slide show</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="carousel.html">Carousel</a>
+    </li>
+  </ul>
+</nav>
     <div class="header">
       <nav></nav>
       <h1>The Paraglide</h1>
@@ -25,9 +45,9 @@
     </div>
     
     <div class="control-buttons">
-      <input type="button" class='btnImage' value="Play pictures" onclick="pictureFunctions.changePics();">
-      <input type="button" class='btnImage' value="Stop pictures" onclick="pictureFunctions.stopPics();">
-      <input type="button" class='btnImage' value="Restart Pictures" onclick="pictureFunctions.restartPics();">
+      <input type="button" class='btnImage' value="Play" onclick="pictureFunctions.changePics();">
+      <input type="button" class='btnImage' value="Stop" onclick="pictureFunctions.stopPics();">
+      <input type="button" class='btnImage' value="Restart" onclick="pictureFunctions.restartPics();">
     </div>
      <img id="glideImg" class='image-gallery' src="/images/blue.png" alt="Click buttons to show paragliding pictures">  
     <div class="footer">
