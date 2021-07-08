@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <title>Paragliding pictures</title>
     <meta name="author" content="Akik Rahman" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="./styles/normalize.css" />
     <link rel="stylesheet" href="./styles/styles.css" />
     <script src="./script/pictures.js"></script>
     <script src="./script/axios.min.js"></script>
@@ -12,6 +14,7 @@
 
   <body>
     <div class="header">
+      <nav></nav>
       <h1>The Paraglide</h1>
     </div>
 
@@ -26,7 +29,7 @@
       <input type="button" class='btnImage' value="Stop pictures" onclick="pictureFunctions.stopPics();">
       <input type="button" class='btnImage' value="Restart Pictures" onclick="pictureFunctions.restartPics();">
     </div>
-    <img id="glideImg" class='image-gallery' src="" alt="Click buttons to show paragliding pictures">
+     <img id="glideImg" class='image-gallery' src="/images/blue.png" alt="Click buttons to show paragliding pictures">  
     <div class="footer">
       <p>&#169; Akhlaqur Rahman 2021</p>
     </div>

@@ -24,7 +24,7 @@ function readPicsLocal(){
 }
 
 async function readPicsFile(){
-
+  //This function is used when we have a JSON server running
   const  {data} = await axios.get(`http://localhost:3004/images`);
   const it = data[Symbol.iterator]();
   let position = it.next();
